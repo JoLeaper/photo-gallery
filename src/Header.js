@@ -6,7 +6,6 @@ export default class Header extends Component {
         return (
             <div className='fullHeader'>
                <img id='reactLogo' alt='react Logo' src={process.env.PUBLIC_URL + '/logo512.png'} / >
-                
             </div>
         )
     }
