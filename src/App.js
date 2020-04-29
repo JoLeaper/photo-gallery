@@ -8,6 +8,7 @@ import hornData from './data.js'
 export default class App extends Component {
   state = {
     title: '',
+    description: '',
     horns: 1,
     keyword: ''
   };
@@ -30,6 +31,12 @@ export default class App extends Component {
     })
   }
 
+  handleDescriptionChange = (event) => {
+    this.setState({
+      description: event.target.value
+    })
+  }
+
 
 
   render() {
@@ -47,6 +54,10 @@ export default class App extends Component {
         </input>
         Filter By Keywords:
         <input value={this.state.keyword} onChange={this.handleInputChange}>
+
+        </input>
+        Filter By Description:
+        <input value={this.state.description} onChange={this.handleDescriptionChange}>
 
         </input>
         <span>Show Me Creatures With At Least...</span>
