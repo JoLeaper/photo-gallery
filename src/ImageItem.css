@@ -1,0 +1,17 @@
+img {
+    width: 200px;
+}
+
+.itemBox {
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+}
+
+ul {
+    list-style: none;
+}
