@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ImageItem from './ImageItem.js'
+import './ImageList.css'
 
 export default class ImageList extends Component {
     
@@ -8,9 +9,9 @@ export default class ImageList extends Component {
             return <ImageItem hornedCreature={hornObject} />
         })
         return (
-            <div>
+            <ul className ='listContainer'>
             { imageItems }
-            </div>
+            </ul>
         )
     }
 }
