@@ -44,22 +44,26 @@ export default class App extends Component {
     .filter(item => item.horns >= this.state.horns)
     .filter(item => item.keyword.includes(this.state.keyword))
     .filter(item => item.title.includes(this.state.title))
+    .filter(item => item.description.includes(this.state.description))
 
     return (
       <div>
         <Header />
+        <p>
         Filter By Name:
        <input value={this.state.name} onChange={this.handleNameChange}>
-
         </input>
+        </p>
+        <p>
         Filter By Keywords:
         <input value={this.state.keyword} onChange={this.handleInputChange}>
-
         </input>
+        </p>
+        <p>
         Filter By Description:
         <input value={this.state.description} onChange={this.handleDescriptionChange}>
-
-        </input>
+        </input> 
+        </p>
         <span>Show Me Creatures With At Least...</span>
         <select onChange={this.handleChange}>
           <option value="1">One Horn</option>
